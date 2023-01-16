@@ -4,24 +4,29 @@
 }
 .container{
     margin: auto;
-    width: 90%;
+    width:90%;
     background-color: #FF900E1A;
 }
 .nav{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     margin: 50px 150px;
 }
 .nav-title{
     font-size: 45px;
-    font-weight: 700;
+    font-weight: 700; 
 }
-.nav-sub{
+.nav-sub {
     display: flex;
-    list-style:none;
-    gap: 30px;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:15px;
     font-size: 18px;
     color: #727272;
+}
+nav li{
+    list-style:none;
 }
 .main-title{
     display: flex;
@@ -39,7 +44,7 @@
 .but{
  text-align: center;
 }
-.button{
+.button1{
     border-radius: 2px;
     border: none;
     margin-top: 15px;
@@ -55,31 +60,27 @@
     height: 570px;
     margin-left: 120px;  
 }
-.header{
+/* banner end */
+/* section1 */
+.container2 {
     display: flex;
-    position: relative;
-  /* justify-content:flex start;  */
+   
 }
-.image{
-    width: 50%;
-    margin: 10px;
-}
-.image img{
-    margin: 10px;
-}
-/* .image {
-    margin-left:60px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 15px;
-    width: 300px;
-    height: 300px;  */
-    /* display: flex; */
-.text{
+.text .paragraph2 {
     display: flex; 
     flex-direction: row-reverse;
-     margin-right: 225px;
-    margin-top: 250px;
+} 
+.paragraph2{
+    font-size: 16px;
+    color: #727272;
+    /* display: flex; */
+}
+.info{
+    margin-right: 215px;
+    margin-top: 250px; 
+}
+.image{
+    margin-left: 50px;
 }
 .quick{
     color:#727272;
@@ -88,29 +89,31 @@
 .ofour{
     font-size:40px ;
 }
-.feuturs{
+.fea{
     color:#FF900E;
-    font-size:45px;
-}
-.paragraph2{
-    font-size: 16px;
-    color: #727272;
-    /* display: flex; */
+    font-size:45px; 
 }
 .button2{
     border-radius: 2px;
     border: none;
     margin-top: 15px;
     font-size: 20px;
-    width:15px;
-    height: 25px;
+    width:100px;
+    height: 65px;
     background-color:#FF900E;
     color: whitesmoke;
 }
 /* architect */
-.features{
-    display: flex;
-    justify-content: last baseline;
+.architect{
+    display:flex;
+}
+.img{
+margin-right: 20px;
+margin-top: 20px;
+}
+.info2{
+    margin-top: 90px;
+    margin-left: 50px;
 }
 .main-title2{
  font-size: 40px;
@@ -130,6 +133,19 @@ color:#727272 ;
 margin-left: 110px;
 margin-bottom:50px ;
 }
+.year{
+  margin-left: 300px;
+  border: none;
+  border-radius: 2px;
+  width:150px;
+  padding: 10px 20px;
+  background-color:#FF900E ;
+  font-size: 20px;
+  color: #727272;
+}
+.year:hover{
+   color: aliceblue;
+}
 /* some facts */
 .some-text{
     font-size: 35px;
@@ -147,16 +163,14 @@ margin-bottom:50px ;
     margin-right: 150px;
     color: #727272;
 }
-.icon1{
+/* .icon1{
     border: #FF900E solid 1px;
     border-radius: 5px;
-    
-
-}
+} */
 /* ----Sponspors style----- */
 .sponspors{text-align: center;
 }
-.img{
+.img2{
     display: grid;
     grid-template-columns: repeat(5,1fr);
     margin-top: 50px;
@@ -184,6 +198,3 @@ margin-bottom:50px ;
     font-size: 18px;
 }
 /* media query for phone */
-@media screen and {
-    
-}
